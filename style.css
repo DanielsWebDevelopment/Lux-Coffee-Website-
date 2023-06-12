@@ -1,0 +1,2304 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Anton&family=Bangers&family=Bebas+Neue&family=Carlito:wght@700&family=Castoro+Titling&family=Cormorant+Garamond&family=Fjalla+One&family=Gilda+Display&family=Gloock&family=Goblin+One&family=Holtwood+One+SC&family=Inter&family=Kanit&family=Konkhmer+Sleokchher&family=Koulen&family=Lilita+One&family=Merriweather:ital@0;1&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;700&family=Oswald:wght@200;400&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,600&family=Rajdhani:wght@700&family=Righteous&family=Roboto+Condensed:ital@1&family=Roboto:wght@300&family=Ruda:wght@600&family=Rufina&family=Russo+One&family=Shrikhand&family=Slabo+27px&family=Squada+One&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fefefe;
+    min-height: 200vh;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+/* ===================== HEADER SECTION ========================== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 50px;
+    z-index: 1000000;
+}
+
+header.sticky{
+    padding: 5px 50px;
+    background: #464646;
+}
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fefefe;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f7f7f7;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+    transition: 0.7s ease;
+}
+
+header ul li a:hover {
+    color: rgb(126, 126, 126);
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(img/pexels-andrew-neel-2312369.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* ===================== END HEADER SECTION ========================== */
+
+/* ===================== ITEM SECTION ========================== */
+.container {
+    min-height: 100vh;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.select-menu {
+    width: 380px;
+    margin-top: 120px;
+    position: relative;
+    top: 120px;
+    left: 10px;
+    margin: 30px 30px;
+}
+
+.select-menu .select-btn {
+    display: flex;
+    height: 35px;
+    background: #f8f8f8;
+    width: 200px;
+    color: #333;
+    padding: 10px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,2.5);
+}
+
+.coffee-image img {
+    max-height: 500px;
+    position: relative;
+    left: 240px;
+    bottom: 250px;
+}
+
+.select-btn {
+    font-size: 0.9em;
+}
+
+.select-btn i {
+    transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+
+.select-menu .options {
+    position: relative;
+    padding: 15px;
+    background: #666666;
+    color: #fff;
+    border-radius: 8px;
+    width: 200px;
+    margin-top: 5px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+}
+
+
+.select-menu.active .options{
+    display: block;
+}
+
+.options .option {
+    display: flex;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+    padding: 0 13px;
+    border-radius: 8px;
+    background: #666666;
+}
+
+.options .option:hover {
+    background: #B4B4B4;
+    color: #fff;
+}
+
+.option .option-text {
+    font-size: 18px;
+}
+/* ===================== END ITEM SECTION ========================== */
+
+/* =======================MAIN SECTION =============================== */
+.main-title {
+    text-align: center;
+    position: relative;
+    bottom: 300px;
+}
+
+.main-title h1 {
+    font-weight: 600;
+    font-size: 42px;
+    letter-spacing: .1rem;
+}
+.container h3 {
+    position: relative;
+    top: 140px;
+    left: 40px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.examples p {
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.product-image img {
+    height: 550px;
+    margin-left: 10px;
+}
+
+.product-image {
+    margin-top: 150px;
+    position: relative;
+    right: 130px;
+}
+
+.main-title p{
+    position: relative;
+    top: 245px;
+    right: 150px;
+    font-weight: 600;
+    
+}
+
+.main-title h5 {
+    letter-spacing: .1rem;
+    font-size: 18px;
+}
+
+.main-title h6 {
+    padding: 160px;
+    line-height: 2rem;
+    font-size: 14px;
+    position: relative;
+    bottom: 700px;
+    left: 150px;
+    font-weight: 600;
+    min-width: 80%;
+}
+/* =======================END MAIN SECTION =============================== */
+
+/* =======================PRODUCTS/BRANDS SECTION =============================== */
+
+.container-box {
+    height: 60vh;
+    width: 30vw;
+    position: absolute;
+    top: 280vh;
+    left: 23vh;
+    perspective: 1000px;
+}
+
+.box {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    transform: rotate(-90deg);
+    transform-style: preserve-3d;
+    animation: animate 5s infinite;
+}
+
+/* =============== keyframes ================ */
+@keyframes animate {
+    0% {
+        transform: rotateX(45deg) rotateY(-45deg);
+    }
+
+    25% {
+        transform: rotateX(-45deg) rotateY(-45deg);
+    }
+
+    50% {
+        transform: rotateX(45deg) rotateY(45deg);
+    }
+
+    75% {
+        transform: rotateX(-45deg) rotateY(45deg);
+    }
+
+    100% {
+        transform: rotateX(45deg) rotateY(-45deg);
+    }
+}
+/* =============== End keyframes ================ */
+.card {
+    text-align: center;
+    color: #f8d539;
+    background-color: #272727a1;
+    height: 200px;
+    width: 200px;
+    padding: 100px 0;
+    /* border: 2px solid black; */
+    font-size: 26px;
+    box-sizing: border-box;
+    position: absolute;
+    transition: all 1s;
+}
+
+#Front {
+    transform: translateZ(125px);
+}
+
+#Back {
+    transform: translateZ(-125px);
+}
+
+#Left {
+    left: 125px;
+    transform: rotateY(-90deg);
+}
+
+#Right {
+    right: 125px;
+    transform: rotateY(90deg);
+}
+
+#Top {
+    bottom: 125px;
+    transform: rotateX(90deg);
+}
+
+#Bottom {
+    top: 125px;
+    transform: rotateX(-90deg);
+}
+
+input {
+    height: 30px;
+    width: 180px;
+    background: #ffffff8c;
+    color: #464646;
+    border-radius: 5px;
+    border: none; 
+    cursor: pointer;
+    position: absolute;
+    top: 420px;
+    left: 6px;
+    font-weight: 600;
+    box-shadow: 0 0 3px rgba(0,0,0,2.5);
+    transition: 0.5s ease;
+}
+
+input:hover{
+    color: #5a5858;
+}
+
+input:focus~ .box #Front{
+    transform: translateZ(-180px) rotateY(360deg);
+}
+
+input:focus~ .box #Back{
+    transform: translateZ(-180px) rotateY(360deg);
+}
+
+input:focus~ .box #Left{
+    right: 180px;
+}
+
+input:focus~ .box #Right{
+    left: 180px;
+}
+
+input:focus~ .box #Top{
+    bottom: 180px;
+}
+
+input:focus~ .box #Bottom{
+   top: 180px; 
+}
+
+/* ======================= END PRODUCTS/BRANDS SECTION =============================== */
+.plans {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.plans h5 {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.7s ease;
+}
+
+.plans h5:hover{
+    background: rgb(177, 177, 177);
+    padding: 15px 5px;
+    color: #ffffff;
+    border-radius: 20%;
+}
+
+.flexbox-container {
+    display: flex;
+}
+
+.flexbox-item {
+    min-width: 180px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+    bottom: 550px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 2.5);
+}
+
+.flexbox-item-1 {
+    min-height: 200px;
+}
+
+.flexbox-item h4 {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #4F4F4F;
+    color: #fefefe;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 2.5);
+}
+
+.flexbox-item p{
+    background-color: #fefefe;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 70px;
+    margin-left: 10px;
+    padding: 15px;
+    width: 90%;
+}
+
+.flexbox-item h4 a {
+    color: #fefefe;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.flexbox-item h4 a:hover{
+    color: #fafd4b;
+}
+/* ====================Products Section */
+.product-section .title {
+    text-align: center;
+    position: relative;
+    bottom: 450px;
+}
+
+.product-section .title h1 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.product-images img {
+    height: 220px;
+    position: relative;
+    bottom: 400px;
+    left: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.product-image-title {
+    display: flex;
+    margin: 60px;
+    gap:120px;
+    position: relative;
+    bottom: 420px;
+    left: 30px;
+}
+
+.product-image-title h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product-image-title a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.product-image-title a:hover{
+    color: #a3a3a3;
+}
+/* ====================END PRODUCTS SECTION ==========================*/
+
+/* ====================CONTACT SECTION ===============================*/
+.contact-section {
+    text-align: center;
+    position: relative;
+    bottom: 350px;
+} 
+
+.contact-section h1 {
+    font-size: 42px;
+    font-weight: 600;
+}
+/* ====================END CONTACT SECTION ===============================*/
+
+/* ====================FOOTER SECTION ===============================*/
+#footer{
+    background-color: #464646;
+    width: 100%;
+}
+
+#footer .container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 270px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+ ul li a {
+    font-size: 15px;
+ }
+
+li a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+li a:hover{
+    color: #fafd4b;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.footer-col ul li a {
+    display: block; 
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    padding-left: 3px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #fefefe;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 2.5);
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #333;
+    transition: 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #fefefe;
+}
+
+.footer-col .social-links {
+    margin-left: 20px;
+    padding: 30px;
+}
+
+/* ==================== media queries / MOBILE ======================== */
+@media screen and (min-width: 420px) and (max-width: 600px){
+    header ul li a {
+        display: none;
+    }
+    
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        background: url(img/pexels-andrew-neel-2312369.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .coffee-image img {
+        display: none;
+    }
+
+    .select-menu {
+        max-width: 410px;
+        margin-top: 120px;
+        position: relative;
+        top: 120px;
+        left: 10px;
+        margin: 30px 30px;
+    }
+
+    .select-menu .select-btn {
+        display: flex;
+        height: 35px;
+        background: #f8f8f8;
+        min-width: 300px;
+        color: #333;
+        padding: 10px;
+        font-weight: 400;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0,0,0,2.5);
+    }
+
+    .container h3 {
+        position: relative;
+        top: 140px;
+        left: 40px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .examples p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .main-title h1 {
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    .main-title h5 {
+        letter-spacing: .1rem;
+        font-size: 15px;
+    }
+
+    .plans h5 {
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        position: relative;
+        right: 50px;
+    }
+
+    .product-image img {
+        display: none;
+    }
+
+    .main-title h6 {
+        display: none;
+    }
+
+    .main-title p{
+        position: relative;
+        top: 245px;
+        right: 0px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .box {
+        height: 200px;
+        width: 150px;
+        position: absolute;
+        top: -650px;
+        left: -100px;
+        transform: rotate(-90deg);
+        transform-style: preserve-3d;
+        animation: animate 5s infinite;
+    }
+    
+    /* =============== keyframes ================ */
+    @keyframes animate {
+        0% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+    
+        25% {
+            transform: rotateX(-45deg) rotateY(-45deg);
+        }
+    
+        50% {
+            transform: rotateX(45deg) rotateY(45deg);
+        }
+    
+        75% {
+            transform: rotateX(-45deg) rotateY(45deg);
+        }
+    
+        100% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+    }
+    /* =============== End keyframes ================ */
+    .card {
+        text-align: center;
+        color: #f8d539;
+        background-color: #272727a1;
+        height: 200px;
+        width: 150px;
+        padding: 100px 0;
+        /* border: 2px solid black; */
+        font-size: 26px;
+        box-sizing: border-box;
+        position: absolute;
+        transition: all 1s;
+    }
+    
+    #Front {
+        transform: translateZ(125px);
+    }
+    
+    #Back {
+        transform: translateZ(-125px);
+    }
+    
+    #Left {
+        left: 125px;
+        transform: rotateY(-90deg);
+    }
+    
+    #Right {
+        right: 125px;
+        transform: rotateY(90deg);
+    }
+    
+    #Top {
+        bottom: 125px;
+        transform: rotateX(90deg);
+    }
+    
+    #Bottom {
+        top: 125px;
+        transform: rotateX(-90deg);
+    }
+    
+    input {
+        height: 30px;
+        width: 180px;
+        background: #ffffff8c;
+        color: #464646;
+        border-radius: 5px;
+        border: none; 
+        cursor: pointer;
+        position: absolute;
+        top: 420px;
+        left: 6px;
+        font-weight: 600;
+        box-shadow: 0 0 3px rgba(0,0,0,2.5);
+        transition: 0.5s ease;
+    }
+    
+    input:hover{
+        color: #5a5858;
+    }
+    
+    input:focus~ .box #Front{
+        transform: translateZ(-180px) rotateY(360deg);
+    }
+    
+    input:focus~ .box #Back{
+        transform: translateZ(-180px) rotateY(360deg);
+    }
+    
+    input:focus~ .box #Left{
+        right: 180px;
+    }
+    
+    input:focus~ .box #Right{
+        left: 180px;
+    }
+    
+    input:focus~ .box #Top{
+        bottom: 180px;
+    }
+    
+    input:focus~ .box #Bottom{
+       top: 180px; 
+    }
+
+    .flexbox-item {
+        min-width: 180px;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 15px;
+        position: relative;
+        bottom: 50px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 2.5);
+    }
+
+    .product-section .title {
+        text-align: center;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .flexbox-container {
+        display: block;
+    }
+
+    .product-images img {
+        display: none;
+    }
+
+    .flexbox-item p{
+        background-color: #fefefe;
+        box-shadow: 0 0 5px rgba(0,0,0,2.5);
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 40px;
+        margin-left: 60px;
+        padding: 15px;
+        width: 70%;
+        height: 50px;
+    }
+
+    .product-image-title h5 {
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 600;
+        position: relative;
+        top: 370px;
+        right: 30px;
+        line-height: 1.5rem;
+    }
+
+    .contact-section h1 {
+        font-size: 42px;
+        font-weight: 600;
+        position: relative;
+        top: 550px;
+    }
+
+    .contact-section small {
+        position: relative;
+        top: 550px;
+    }
+
+    #footer{
+        background-color: #464646;
+        width: 100%;
+        position: relative;
+        top: 450px;
+    }
+
+    .row {
+        display: flex;
+        text-align: center;
+    }
+
+    .footer-col {
+        width: 23%;
+        padding: 0 15px;
+    }
+    
+    .footer-col h4 {
+        color: #fff;
+        font-size: 16px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 600;
+        position: relative;
+        left: 20px;
+        text-align: center;
+    }
+
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    
+    .footer-col ul li a {
+        display: block; 
+    }
+    
+    .footer-col ul li a:hover{
+        padding-left: 3px;
+    }
+
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: #fefefe;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 2.5);
+        margin-right: 5px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #333;
+        transition: 0.5s ease;
+    }
+    
+    .footer-col .social-links a:hover{
+        color: #fefefe;
+    }
+    
+    .footer-col .social-links {
+        margin-left: 0px;
+        padding: 30px;
+    }
+}
+/* ==================== media queries / MOBILE ======================== */
+@media screen and (min-width: 768px) and (max-width: 990px){
+    .main-title h1 {
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    .coffee-image img {
+        min-height: 700px;
+        position: relative;
+        left: 240px;
+        bottom: 300px;
+    }
+
+    .plans h5 {
+        font-size: 14px;
+        font-weight: 600;
+        transition: 0.7s ease;
+        position: relative;
+        left: 70px;
+    }
+
+    .main-title h6 {
+        padding: 200px;
+        line-height: 2rem;
+        font-size: 14px;
+        position: relative;
+        bottom: 700px;
+        left: 180px;
+        font-weight: 600;
+        min-width: 80%;
+    }
+
+    .product-image img {
+        position: relative;
+        right: 50px;
+    }
+
+    .main-title p{
+        position: relative;
+        top: 245px;
+        right: 200px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .main-title h5 {
+        letter-spacing: .1rem;
+        font-size: 17px;
+    }
+
+    .plans h5 {
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        position: relative;
+        right: 50px;
+    }
+
+    .box {
+        height: 200px;
+        width: 150px;
+        position: absolute;
+        bottom: -30px;
+        left: 100px;
+        transform: rotate(-90deg);
+        transform-style: preserve-3d;
+        animation: animate 5s infinite;
+    }
+    
+    /* =============== keyframes ================ */
+    @keyframes animate {
+        0% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+    
+        25% {
+            transform: rotateX(-45deg) rotateY(-45deg);
+        }
+    
+        50% {
+            transform: rotateX(45deg) rotateY(45deg);
+        }
+    
+        75% {
+            transform: rotateX(-45deg) rotateY(45deg);
+        }
+    
+        100% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+    }
+    /* =============== End keyframes ================ */
+    .card {
+        text-align: center;
+        color: #f8d539;
+        background-color: #272727a1;
+        height: 200px;
+        width: 150px;
+        padding: 100px 0;
+        /* border: 2px solid black; */
+        font-size: 26px;
+        box-sizing: border-box;
+        position: absolute;
+        transition: all 1s;
+    }
+    
+    #Front {
+        transform: translateZ(125px);
+    }
+    
+    #Back {
+        transform: translateZ(-125px);
+    }
+    
+    #Left {
+        left: 125px;
+        transform: rotateY(-90deg);
+    }
+    
+    #Right {
+        right: 125px;
+        transform: rotateY(90deg);
+    }
+    
+    #Top {
+        bottom: 125px;
+        transform: rotateX(90deg);
+    }
+    
+    #Bottom {
+        top: 125px;
+        transform: rotateX(-90deg);
+    }
+    
+    input {
+        height: 30px;
+        width: 180px;
+        background: #ffffff8c;
+        color: #464646;
+        border-radius: 5px;
+        border: none; 
+        cursor: pointer;
+        position: absolute;
+        top: 420px;
+        left: 70px;
+        font-weight: 600;
+        box-shadow: 0 0 3px rgba(0,0,0,2.5);
+        transition: 0.5s ease;
+    }
+    
+    input:hover{
+        color: #5a5858;
+    }
+    
+    input:focus~ .box #Front{
+        transform: translateZ(-180px) rotateY(360deg);
+    }
+    
+    input:focus~ .box #Back{
+        transform: translateZ(-180px) rotateY(360deg);
+    }
+    
+    input:focus~ .box #Left{
+        right: 180px;
+    }
+    
+    input:focus~ .box #Right{
+        left: 180px;
+    }
+    
+    input:focus~ .box #Top{
+        bottom: 180px;
+    }
+    
+    input:focus~ .box #Bottom{
+       top: 180px; 
+    }
+
+    .flexbox-item {
+        min-width: 200px;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 15px;
+        position: relative;
+        bottom: 465px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 2.5);
+    }
+
+    .flexbox-item p{
+        background-color: #fefefe;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-left: 35px;
+        padding: 15px;
+        width: 70%;
+        height: 50px;
+        text-align: center;
+    }
+
+    .product-images img {
+        height: 260px;
+        position: relative;
+        bottom: 400px;
+        left: 55px;
+        margin: 20px;
+        cursor: pointer;
+    }
+
+    .product-image-title {
+        display: flex;
+        margin: 60px;
+        gap:180px;
+        position: relative;
+        bottom: 420px;
+        left: 70px;
+    }
+}
+/* ============================ END TABLET MEDIA QUERIES ========================= */
+
+/* ============================ REGULAR DESKTOP MEDIA QUERIES ========================= */
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .coffee-image img {
+        min-height: 750px;
+        position: relative;
+        left: 740px;
+        bottom: 350px;
+    }
+
+    .select-menu {
+        max-width: 410px;
+        margin-top: 120px;
+        position: relative;
+        top: 120px;
+        left: 60px;
+        margin: 30px 30px;
+    }
+
+    .select-menu .select-btn {
+        display: flex;
+        height: 35px;
+        background: #f8f8f8;
+        min-width: 300px;
+        color: #333;
+        padding: 10px;
+        font-weight: 400;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0,0,0,2.5);
+    }
+
+    .container h3 {
+        position: relative;
+        top: 140px;
+        left: 90px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .examples p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .main-title h1 {
+        font-weight: 600;
+        font-size: 55px;
+    }
+
+    .main-title h5 {
+        letter-spacing: .1rem;
+        font-size: 18px;
+    }
+
+    .plans h5 {
+        font-size: 16px;
+        font-weight: 600;
+        transition: 0.7s ease;
+        position: relative;
+        left: 2000px;
+    }
+
+    .product-image img {
+        height: 550px;
+        position: relative;
+        right: 160px;
+    }
+
+    .main-title h6 {
+        padding: 250px;
+        line-height: 2rem;
+        font-size: 14px;
+        position: relative;
+        bottom: 700px;
+        left: 180px;
+        font-weight: 600;
+        min-width: 80%;
+    }
+
+    .main-title p{
+        position: relative;
+        top: 245px;
+        right: 310px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .box {
+        height: 200px;
+        width: 150px;
+        position: absolute;
+        bottom: -10px;
+        left: 300px;
+        transform: rotate(-90deg);
+        transform-style: preserve-3d;
+        animation: animate 5s infinite;
+    }
+    
+    /* =============== keyframes ================ */
+    @keyframes animate {
+        0% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+    
+        25% {
+            transform: rotateX(-45deg) rotateY(-45deg);
+        }
+    
+        50% {
+            transform: rotateX(45deg) rotateY(45deg);
+        }
+    
+        75% {
+            transform: rotateX(-45deg) rotateY(45deg);
+        }
+    
+        100% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+    }
+    /* =============== End keyframes ================ */
+    .card {
+        text-align: center;
+        color: #f8d539;
+        background-color: #272727a1;
+        height: 200px;
+        width: 150px;
+        padding: 100px 0;
+        /* border: 2px solid black; */
+        font-size: 26px;
+        box-sizing: border-box;
+        position: absolute;
+        transition: all 1s;
+    }
+    
+    #Front {
+        transform: translateZ(125px);
+    }
+    
+    #Back {
+        transform: translateZ(-125px);
+    }
+    
+    #Left {
+        left: 125px;
+        transform: rotateY(-90deg);
+    }
+    
+    #Right {
+        right: 125px;
+        transform: rotateY(90deg);
+    }
+    
+    #Top {
+        bottom: 125px;
+        transform: rotateX(90deg);
+    }
+    
+    #Bottom {
+        top: 125px;
+        transform: rotateX(-90deg);
+    }
+    
+    input {
+        height: 30px;
+        width: 200px;
+        background: #ffffff8c;
+        color: #464646;
+        border-radius: 5px;
+        border: none; 
+        cursor: pointer;
+        position: absolute;
+        top: 450px;
+        left: 150px;
+        font-weight: 600;
+        box-shadow: 0 0 3px rgba(0,0,0,2.5);
+        transition: 0.5s ease;
+    }
+    
+    input:hover{
+        color: #5a5858;
+    }
+    
+    input:focus~ .box #Front{
+        transform: translateZ(-180px) rotateY(360deg);
+    }
+    
+    input:focus~ .box #Back{
+        transform: translateZ(-180px) rotateY(360deg);
+    }
+    
+    input:focus~ .box #Left{
+        right: 180px;
+    }
+    
+    input:focus~ .box #Right{
+        left: 180px;
+    }
+    
+    input:focus~ .box #Top{
+        bottom: 180px;
+    }
+    
+    input:focus~ .box #Bottom{
+       top: 180px; 
+    }
+
+    .flexbox-item {
+        min-width: 290px;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 15px;
+        position: relative;
+        bottom: 465px;
+        left: 20px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 2.5);
+    }
+
+    .flexbox-item p{
+        background-color: #fefefe;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-left: 35px;
+        padding: 15px;
+        width: 70%;
+        height: 50px;
+        text-align: center;
+    }
+
+    .product-section .title {
+        text-align: center;
+        position: relative;
+        bottom: 400px;
+    }
+
+    .product-section .title h1 {
+        font-size: 60px;
+        font-weight: 600;
+        letter-spacing: .1rem;
+    }
+
+    .product-images img {
+        height: 260px;
+        position: relative;
+        bottom: 400px;
+        left: 155px;
+        margin: 20px;
+        cursor: pointer;
+    }
+
+    .product-image-title {
+        display: flex;
+        margin: 60px;
+        gap:180px;
+        position: relative;
+        bottom: 420px;
+        left: 170px;
+    }
+
+    .contact-section h1 {
+        font-size: 60px;
+        font-weight: 600;
+        position: relative;
+        top: 50px;
+    }
+
+    .contact-section small {
+        position: relative;
+        top: 50px;
+        font-weight: 600;
+    }
+}
+
+/* ============================ END REGULAR DESKTOP MEDIA QUERIES ========================= */
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    .coffee-image img {
+        min-height: 650px;
+        position: relative;
+        left: 550px;
+        bottom: 300px;
+    }
+
+    .select-menu {
+        max-width: 510px;
+        margin-top: 120px;
+        position: relative;
+        top: 120px;
+        left: 60px;
+        margin: 30px 30px;
+    }
+
+    .select-menu .select-btn {
+        display: flex;
+        height: 35px;
+        background: #f8f8f8;
+        min-width: 450px;
+        color: #333;
+        padding: 10px;
+        font-weight: 400;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0,0,0,2.5);
+    }
+
+    .container h3 {
+        position: relative;
+        top: 140px;
+        left: 90px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .examples p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .main-title h1 {
+        font-weight: 600;
+        font-size: 60px;
+    }
+
+    .main-title h5 {
+        letter-spacing: .1rem;
+        font-size: 18px;
+    }
+
+    .plans h5 {
+        font-size: 16px;
+        font-weight: 600;
+        transition: 0.7s ease;
+        position: relative;
+        left: 2000px;
+    }
+
+    .product-image img {
+        height: 650px;
+        position: relative;
+        right: 160px;
+    }
+
+    .main-title h6 {
+        padding: 300px;
+        line-height: 2rem;
+        font-size: 16px;
+        position: relative;
+        bottom: 900px;
+        left: 180px;
+        font-weight: 600;
+        min-width: 80%;
+    }
+
+    .main-title p{
+        position: relative;
+        top: 245px;
+        right: 310px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .box {
+        height: 200px;
+        width: 150px;
+        position: absolute;
+        bottom: -10px;
+        left: 500px;
+        transform: rotate(-90deg);
+        transform-style: preserve-3d;
+        animation: animate 5s infinite;
+    }
+    
+    /* =============== keyframes ================ */
+    @keyframes animate {
+        0% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+    
+        25% {
+            transform: rotateX(-45deg) rotateY(-45deg);
+        }
+    
+        50% {
+            transform: rotateX(45deg) rotateY(45deg);
+        }
+    
+        75% {
+            transform: rotateX(-45deg) rotateY(45deg);
+        }
+    
+        100% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+    }
+    /* =============== End keyframes ================ */
+    .card {
+        text-align: center;
+        color: #f8d539;
+        background-color: #272727a1;
+        height: 200px;
+        width: 150px;
+        padding: 100px 0;
+        /* border: 2px solid black; */
+        font-size: 26px;
+        box-sizing: border-box;
+        position: absolute;
+        transition: all 1s;
+    }
+    
+    #Front {
+        transform: translateZ(125px);
+    }
+    
+    #Back {
+        transform: translateZ(-125px);
+    }
+    
+    #Left {
+        left: 125px;
+        transform: rotateY(-90deg);
+    }
+    
+    #Right {
+        right: 125px;
+        transform: rotateY(90deg);
+    }
+    
+    #Top {
+        bottom: 125px;
+        transform: rotateX(90deg);
+    }
+    
+    #Bottom {
+        top: 125px;
+        transform: rotateX(-90deg);
+    }
+    
+    input {
+        height: 30px;
+        width: 300px;
+        background: #ffffff8c;
+        color: #464646;
+        border-radius: 5px;
+        border: none; 
+        cursor: pointer;
+        position: absolute;
+        top: 450px;
+        left: 350px;
+        font-weight: 600;
+        box-shadow: 0 0 3px rgba(0,0,0,2.5);
+        transition: 0.5s ease;
+    }
+    
+    input:hover{
+        color: #5a5858;
+    }
+    
+    input:focus~ .box #Front{
+        transform: translateZ(-180px) rotateY(360deg);
+    }
+    
+    input:focus~ .box #Back{
+        transform: translateZ(-180px) rotateY(360deg);
+    }
+    
+    input:focus~ .box #Left{
+        right: 180px;
+    }
+    
+    input:focus~ .box #Right{
+        left: 180px;
+    }
+    
+    input:focus~ .box #Top{
+        bottom: 180px;
+    }
+    
+    input:focus~ .box #Bottom{
+       top: 180px; 
+    }
+
+    .flexbox-item {
+        min-width: 370px;
+        height: 300px;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 15px;
+        position: relative;
+        bottom: 715px;
+        left: 20px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 2.5);
+    }
+
+    .flexbox-item p{
+        background-color: #fefefe;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 80px;
+        margin-left: 35px;
+        padding: 15px;
+        width: 70%;
+        height: 50px;
+        text-align: center;
+    }
+
+    .product-section .title {
+        text-align: center;
+        position: relative;
+        bottom: 400px;
+    }
+
+    .product-section .title h1 {
+        font-size: 80px;
+        font-weight: 600;
+        letter-spacing: .1rem;
+    }
+
+    .product-images img {
+        height: 260px;
+        position: relative;
+        bottom: 400px;
+        left: 255px;
+        margin: 20px;
+        cursor: pointer;
+    }
+
+    .product-image-title {
+        display: flex;
+        margin: 60px;
+        gap:180px;
+        position: relative;
+        bottom: 420px;
+        left: 280px;
+    }
+
+    .contact-section h1 {
+        font-size: 80px;
+        font-weight: 600;
+        position: relative;
+        top: 50px;
+    }
+
+    .contact-section small {
+        position: relative;
+        top: 50px;
+        font-weight: 600;
+    }
+
+    .footer-col h4 {
+        color: #fff;
+        font-size: 16px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 600;
+        position: relative;
+        right: 60px;
+        text-align: center;
+    }
+
+    .footer-col .social-links {
+        margin-left: 0px;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 1407px){
+    header ul li a {
+        position: relative;
+        margin: 0 100px;
+        text-decoration: none;
+        color: #f7f7f7;
+        letter-spacing: 2px;
+        font-weight: 500;
+        transition: 0.6s;
+        transition: 0.7s ease;
+    }
+    
+    
+    
+    .coffee-image img {
+        min-height: 650px;
+        position: relative;
+        left: 750px;
+        bottom: 320px;
+    }
+
+    .select-menu {
+        max-width: 510px;
+        margin-top: 120px;
+        position: relative;
+        top: 120px;
+        left: 160px;
+        margin: 30px 30px;
+    }
+
+    .select-menu .select-btn {
+        display: flex;
+        height: 35px;
+        background: #f8f8f8;
+        min-width: 450px;
+        color: #333;
+        padding: 10px;
+        font-weight: 400;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0,0,0,2.5);
+    }
+
+    .container h3 {
+        position: relative;
+        top: 140px;
+        left: 190px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .examples p {
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .plans h5 {
+        font-size: 16px;
+        font-weight: 600;
+        transition: 0.7s ease;
+        position: relative;
+        left: 374px;
+    }
+
+    .product-image img {
+        height: 750px;
+        position: relative;
+        right: 160px;
+    }
+
+    .main-title h6 {
+        padding: 400px;
+        line-height: 2rem;
+        font-size: 16px;
+        position: relative;
+        bottom: 1030px;
+        left: 250px;
+        font-weight: 600;
+        min-width: 80%;
+    }
+
+    .main-title p{
+        position: relative;
+        top: 245px;
+        right: 310px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .box {
+        height: 200px;
+        width: 150px;
+        position: absolute;
+        bottom: -10px;
+        left: 500px;
+        transform: rotate(-90deg);
+        transform-style: preserve-3d;
+        animation: animate 5s infinite;
+    }
+    
+    /* =============== keyframes ================ */
+    @keyframes animate {
+        0% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+    
+        25% {
+            transform: rotateX(-45deg) rotateY(-45deg);
+        }
+    
+        50% {
+            transform: rotateX(45deg) rotateY(45deg);
+        }
+    
+        75% {
+            transform: rotateX(-45deg) rotateY(45deg);
+        }
+    
+        100% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+    }
+    /* =============== End keyframes ================ */
+    .card {
+        text-align: center;
+        color: #f8d539;
+        background-color: #272727a1;
+        height: 200px;
+        width: 150px;
+        padding: 100px 0;
+        /* border: 2px solid black; */
+        font-size: 26px;
+        box-sizing: border-box;
+        position: absolute;
+        transition: all 1s;
+    }
+    
+    #Front {
+        transform: translateZ(125px);
+    }
+    
+    #Back {
+        transform: translateZ(-125px);
+    }
+    
+    #Left {
+        left: 125px;
+        transform: rotateY(-90deg);
+    }
+    
+    #Right {
+        right: 125px;
+        transform: rotateY(90deg);
+    }
+    
+    #Top {
+        bottom: 125px;
+        transform: rotateX(90deg);
+    }
+    
+    #Bottom {
+        top: 125px;
+        transform: rotateX(-90deg);
+    }
+    
+    input {
+        height: 30px;
+        width: 300px;
+        background: #ffffff8c;
+        color: #464646;
+        border-radius: 5px;
+        border: none; 
+        cursor: pointer;
+        position: absolute;
+        top: 450px;
+        left: 350px;
+        font-weight: 600;
+        box-shadow: 0 0 3px rgba(0,0,0,2.5);
+        transition: 0.5s ease;
+    }
+    
+    input:hover{
+        color: #5a5858;
+    }
+    
+    input:focus~ .box #Front{
+        transform: translateZ(-180px) rotateY(360deg);
+    }
+    
+    input:focus~ .box #Back{
+        transform: translateZ(-180px) rotateY(360deg);
+    }
+    
+    input:focus~ .box #Left{
+        right: 180px;
+    }
+    
+    input:focus~ .box #Right{
+        left: 180px;
+    }
+    
+    input:focus~ .box #Top{
+        bottom: 180px;
+    }
+    
+    input:focus~ .box #Bottom{
+       top: 180px; 
+    }
+
+    .product-section .title h1 {
+        font-size: 80px;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        position: relative;
+        bottom: 400px;
+    }
+
+    .flexbox-item {
+        min-width: 440px;
+        height: 300px;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 15px;
+        position: relative;
+        bottom: 965px;
+        left: 20px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 2.5);
+    }
+
+    .flexbox-item p{
+        background-color: #fefefe;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 120px;
+        margin-left: 65px;
+        padding: 15px;
+        width: 70%;
+        height: 50px;
+        text-align: center;
+    }
+
+    .contact-section h1 {
+        font-size: 80px;
+        font-weight: 600;
+        position: relative;
+        top: 50px;
+    }
+
+    .contact-section small {
+        position: relative;
+        top: 50px;
+        font-weight: 600;
+    }
+
+    .product-images img {
+        height: 360px;
+        position: relative;
+        bottom: 400px;
+        left: 255px;
+        margin: 30px;
+        cursor: pointer;
+    }
+
+    .product-image-title {
+        display: flex;
+        margin: 60px;
+        gap:180px;
+        position: relative;
+        bottom: 420px;
+        left: 400px;
+    }
+
+    .footer-col h4 {
+        color: #fff;
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 600;
+        position: relative;
+        right: 90px;
+        text-align: center;
+    }
+
+    .footer-col .social-links {
+        margin-left: 0px;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 1525px){
+    .coffee-image img {
+        min-height: 650px;
+        position: relative;
+        left: 850px;
+        bottom: 340px;
+    }
+
+    .select-menu {
+        max-width: 510px;
+        margin-top: 120px;
+        position: relative;
+        top: 120px;
+        left: 160px;
+        margin: 30px 30px;
+    }
+
+    .select-menu .select-btn {
+        display: flex;
+        height: 35px;
+        background: #f8f8f8;
+        min-width: 450px;
+        color: #333;
+        padding: 10px;
+        font-weight: 400;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0,0,0,2.5);
+    }
+
+    .container h3 {
+        position: relative;
+        top: 140px;
+        left: 190px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .examples p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .main-title h1 {
+        font-weight: 600;
+        font-size: 60px;
+    }
+
+    .main-title h5 {
+        letter-spacing: .1rem;
+        font-size: 18px;
+    }
+
+    .plans h5 {
+        font-size: 16px;
+        font-weight: 600;
+        transition: 0.7s ease;
+        position: relative;
+        left: 2000px;
+    }
+
+    .product-image img {
+        height: 650px;
+        position: relative;
+        right: 160px;
+    }
+
+    .main-title h6 {
+        padding: 450px;
+        line-height: 2rem;
+        font-size: 16px;
+        position: relative;
+        bottom: 1050px;
+        left: 250px;
+        font-weight: 600;
+        min-width: 80%;
+    }
+
+    .main-title p{
+        position: relative;
+        top: 245px;
+        right: 310px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .box {
+        height: 200px;
+        width: 150px;
+        position: absolute;
+        bottom: -10px;
+        left: 500px;
+        transform: rotate(-90deg);
+        transform-style: preserve-3d;
+        animation: animate 5s infinite;
+    }
+    
+    /* =============== keyframes ================ */
+    @keyframes animate {
+        0% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+    
+        25% {
+            transform: rotateX(-45deg) rotateY(-45deg);
+        }
+    
+        50% {
+            transform: rotateX(45deg) rotateY(45deg);
+        }
+    
+        75% {
+            transform: rotateX(-45deg) rotateY(45deg);
+        }
+    
+        100% {
+            transform: rotateX(45deg) rotateY(-45deg);
+        }
+    }
+    /* =============== End keyframes ================ */
+    .card {
+        text-align: center;
+        color: #f8d539;
+        background-color: #272727a1;
+        height: 200px;
+        width: 150px;
+        padding: 100px 0;
+        /* border: 2px solid black; */
+        font-size: 26px;
+        box-sizing: border-box;
+        position: absolute;
+        transition: all 1s;
+    }
+    
+    #Front {
+        transform: translateZ(125px);
+    }
+    
+    #Back {
+        transform: translateZ(-125px);
+    }
+    
+    #Left {
+        left: 125px;
+        transform: rotateY(-90deg);
+    }
+    
+    #Right {
+        right: 125px;
+        transform: rotateY(90deg);
+    }
+    
+    #Top {
+        bottom: 125px;
+        transform: rotateX(90deg);
+    }
+    
+    #Bottom {
+        top: 125px;
+        transform: rotateX(-90deg);
+    }
+    
+    input {
+        height: 30px;
+        width: 300px;
+        background: #ffffff8c;
+        color: #464646;
+        border-radius: 5px;
+        border: none; 
+        cursor: pointer;
+        position: absolute;
+        top: 450px;
+        left: 430px;
+        font-weight: 600;
+        box-shadow: 0 0 3px rgba(0,0,0,2.5);
+        transition: 0.5s ease;
+    }
+    
+    input:hover{
+        color: #5a5858;
+    }
+    
+    input:focus~ .box #Front{
+        transform: translateZ(-180px) rotateY(360deg);
+    }
+    
+    input:focus~ .box #Back{
+        transform: translateZ(-180px) rotateY(360deg);
+    }
+    
+    input:focus~ .box #Left{
+        right: 180px;
+    }
+    
+    input:focus~ .box #Right{
+        left: 180px;
+    }
+    
+    input:focus~ .box #Top{
+        bottom: 180px;
+    }
+    
+    input:focus~ .box #Bottom{
+       top: 180px; 
+    }
+
+    .flexbox-item {
+        min-width: 490px;
+        height: 300px;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 15px;
+        position: relative;
+        bottom: 715px;
+        left: 20px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 2.5);
+    }
+
+    .flexbox-item p{
+        background-color: #fefefe;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 80px;
+        margin-left: 35px;
+        padding: 15px;
+        width: 70%;
+        height: 50px;
+        text-align: center;
+    }
+
+    .product-section .title {
+        text-align: center;
+        position: relative;
+        bottom: 150px;
+    }
+
+    .product-section .title h1 {
+        font-size: 80px;
+        font-weight: 600;
+        letter-spacing: .1rem;
+    }
+
+    .product-images img {
+        height: 360px;
+        position: relative;
+        bottom: 400px;
+        left: 355px;
+        margin: 20px;
+        cursor: pointer;
+    }
+
+    .product-image-title {
+        display: flex;
+        margin: 60px;
+        gap:180px;
+        position: relative;
+        bottom: 420px;
+        left: 480px;
+    }
+
+    .contact-section h1 {
+        font-size: 80px;
+        font-weight: 600;
+        position: relative;
+        top: 50px;
+    }
+
+    .contact-section small {
+        position: relative;
+        top: 50px;
+        font-weight: 600;
+    }
+
+    .footer-col h4 {
+        color: #fff;
+        font-size: 16px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 600;
+        position: relative;
+        right: 110px;
+        text-align: center;
+    }
+
+    .footer-col .social-links {
+        margin-left: 0px;
+        padding: 30px;
+    }
+
+    .title p {
+        position: relative;
+        bottom: 400px;
+    }
+}
