@@ -9,9 +9,9 @@ The tools i used in this project was Javascript, HTML & CSS along with
 some Bootstrap
 
 ## Some of the Features include, but not limited to 
-implentation of allowing users to search for a brand, type or flavor of coffee
+* implentation of allowing users to search for a brand, type or flavor of coffee
 
-Implentation of of allowing users to purchase certain coffee on our website 
+* Implentation of of allowing users to purchase certain coffee on our website 
 following the brands section 
 
 # Below are some images of the Websites Structure
