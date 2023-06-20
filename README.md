@@ -1,12 +1,12 @@
 # Lux-Coffee-Website-
 
-# Lux Coffee was developed as a personal project 
+## Lux Coffee was developed as a personal project 
 
 The project revolves around being able to ship coffee nationwide allowing users to
 pick the type, Flavor & Brand of Coffee of there choosing. 
 
-The tools i used in this project was Javascript, HTML & CSS along with 
-some Bootstrap
+#### This website was built using HMTL, CSS, JavaScript & bootstrap
+
 
 ## Some of the Features include, but not limited to 
 * implentation of allowing users to search for a brand, type or flavor of coffee
