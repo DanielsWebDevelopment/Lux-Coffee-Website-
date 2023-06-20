@@ -14,7 +14,7 @@ pick the type, Flavor & Brand of Coffee of there choosing.
 * Implentation of of allowing users to purchase certain coffee on our website 
 following the brands section 
 
-# Below are some images of the Websites Structure
+## Below are some images of the Websites Structure
 
 (Main) 
 ![L6](https://github.com/DanielsWebDevelopment/SmartHome-Clone-Project-/assets/129445203/52fd0a89-4b26-4419-a9ff-66297241b40e)
