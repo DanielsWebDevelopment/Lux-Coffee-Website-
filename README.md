@@ -1,4 +1,4 @@
-# Lux-Coffee-Website-
+![LUX_COFFEE](https://github.com/DanielsWebDevelopment/Start-Fitness-Website/assets/129445203/a90a89f6-fee2-4aed-9316-df714c3da0d0)
 
 ## Lux Coffee was developed as a personal project 
 
